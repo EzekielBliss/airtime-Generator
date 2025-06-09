@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="card.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>Recharge Card Generator</h1>
+      <div id="network-server">
+        <div id="network">
+          <img
+            src="/images/MTN Logo PNG Vector (SVG) Free Download.jpg"
+            alt=""
+            onclick="selectNetwork('MTN')"
+          />
+        </div>
+        <div id="network">
+          <img
+            src="/images/Airtel Nigeria, We've got you covered!.jpg"
+            alt=""
+            onclick="selectNetwork('Airtel')"
+          />
+        </div>
+        <div id="network">
+          <img
+            src="/images/GLO Vector Logo_.jpg"
+            alt=""
+            onclick="selectNetwork('GLO')"
+          />
+        </div>
+        <div id="network">
+          <img
+            src="/images/9Mobile Ng_ Get Free 1GB Data For Night Browsing, see how to do this.jpg"
+            alt=""
+            onclick="selectNetwork('9Mobile')"
+          />
+        </div>
+      </div>
+
+      <div id="balanceDisplay"></div>
+
+      <div id="price">
+        <button onclick="firstPrice()">50.00</button>
+        <button onclick="secPrice()">100.00</button>
+        <button onclick="thirdPrice()">200.00</button>
+        <button onclick="forthPrice()">500.00</button>
+        <button onclick="fifthPrice()">1000.00</button>
+        <button onclick="sixthPrice()">2000.00</button>
+      </div>
+
+      <div id="cardInput">
+        <input type="text" placeholder="Price" id="priceInput" />
+        <input type="text" value="*311*PIN#" id="cardLoad" />
+      </div>
+
+      <div id="pinText">
+        
+      </div>
+      <div id="generate"></div>
+
+      <div id="table"></div>
+      
+      <h2>Card Records</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Network</th>
+            <th>Amount</th>
+            <th>PIN</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="cardTableBody"></tbody>
+      </table>
+      
+    </div>
+  </body>
+</html>
+<script src="airtime.js"></script>
